@@ -12,7 +12,7 @@ type Props = {
   porcent?: string
   link?: string
   desc?: string
-  src: string
+  src?: string
   exp?: string
   theme?: string
   dateT?: string
@@ -33,7 +33,7 @@ function SkillCard({
   exp,
   dateT,
   descT,
-  prctT,
+  prctT
 }: Props) {
   return (
     <motion.div
@@ -49,8 +49,8 @@ function SkillCard({
       <div className="flex gap-5 flex-row">
         <Link href={link ?? ''} target="_blank">
           <Image
-            alt=""
-            src={src}
+            alt=''
+            src={src??''}
             className="rounded-full object-fill hover:border-[#f7AB01] border-transparent border-4 w-24 h-24 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 overflow-hidden "
           />
         </Link>
