@@ -1,22 +1,21 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { SocialIcon } from 'react-social-icons'
 import {
   GlobeAsiaAustraliaIcon,
-  GlobeAltIcon,
   GlobeAmericasIcon,
   LightBulbIcon,
   MoonIcon,
-  ChatBubbleLeftIcon,
+  ArrowDownTrayIcon,
 } from '@heroicons/react/24/solid'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState, useEffect } from 'react'
 import { FullContext } from '../context/Context'
+import Link from 'next/link'
+import handler from '../pages/api/getPDF'
 
 type Props = {}
 
 export default function Header({}: Props) {
   const [isOpen, setOpen] = useState(false)
-
   const appContext = useContext(FullContext)
 
   return (
@@ -45,22 +44,10 @@ export default function Header({}: Props) {
           bgColor={appContext?.theme.bgIcon}
         />
         <SocialIcon
-          url="https://www.youtube.com/channel/UCGJwZBiP5TyP5tTP0wlFnMQ"
-          target="_blank"
-          fgColor={appContext?.theme.fgIcon}
-          bgColor={appContext?.theme.bgIcon}
-        />
-        <SocialIcon
           url="https://www.linkedin.com/in/diego-merino-43b0b2197/"
           target="_blank"
           fgColor={appContext?.theme.fgIcon}
           bgColor={appContext?.theme.bgIcon}
-        />
-        <SocialIcon
-          url="https://twitch.tv/dacynoob"
-          fgColor={appContext?.theme.fgIcon}
-          bgColor={appContext?.theme.bgIcon}
-          target="_blank"
         />
         <SocialIcon
           url="https://github.com/Dacyz"
@@ -70,22 +57,36 @@ export default function Header({}: Props) {
         />
       </div>
       {/* Settings Buttons */}
-      <div className=" flex-row items-center gap-2 hidden sm:flex">
+      <div className=" flex-row items-center gap-2 flex">
+        {/* Resume Button */}
+        <Link href={'/api/getPDF'}>
+          <div
+            style={{
+              background: appContext?.theme.bgButton,
+            }}
+            className="flex-row flex md:w-28 rounded-full md:rounded-2xl justify-between cursor-pointer"
+          >
+            <div className="hidden md:inline-flex align-middle pl-2 my-auto font-semibold">
+              {appContext?.idiome.sections.resume}
+            </div>
+            <ArrowDownTrayIcon
+              style={{ color: appContext?.theme.fgIcon }}
+              className="h-7 w-7 m-3"
+            />
+          </div>
+        </Link>
         {/* Theme mode Button */}
         <div
           onClick={() => appContext?.setThemeMode(!appContext?.themeMode)}
           style={{
             background: appContext?.theme.bgButton,
           }}
-          className="flex-row flex rounded-2xl cursor-pointer"
+          className="flex-row flex p-[5px]  rounded-full cursor-pointer"
         >
-          <div className="hidden lg:inline-flex align-middle pl-2 my-auto font-semibold">
-            Theme
-          </div>
           {appContext?.themeMode ? (
-            <MoonIcon className="h-8 w-8 text-[rgb(156,163,175)] m-2" />
+            <MoonIcon className="h-6 w-6 text-[rgb(156,163,175)] m-2" />
           ) : (
-            <LightBulbIcon className="h-8 w-8 text-black m-2" />
+            <LightBulbIcon className="h-6 w-6 text-black m-2" />
           )}
         </div>
         {/* Lenguage Button */}
@@ -93,79 +94,59 @@ export default function Header({}: Props) {
           style={{
             background: appContext?.theme.bgButton,
           }}
-          className="flex-row flex rounded-2xl cursor-pointer"
+          className="flex-row flex md:w-32 rounded-2xl justify-between cursor-pointer"
           onClick={() => setOpen(isOpen ? false : true)}
         >
-          <div className="hidden lg:inline-flex align-middle pl-2 my-auto font-semibold">
+          <div className="hidden md:inline-flex align-middle pl-2 my-auto font-semibold">
             {appContext?.idiome.en === 'Ingles'
               ? appContext?.idiome.es
+              : appContext?.idiome.en === 'Inglês'
+              ? appContext?.idiome.pt
               : appContext?.idiome.en}
           </div>
-          <GlobeAltIcon
-            style={{ color: appContext?.theme.fgIcon }}
-            className="h-8 w-8 m-2"
-          />
-        </div>
-        {/* Contact Button */}
-        <div
-          style={{
-            background: appContext?.theme.bgButton,
-          }}
-          className="flex-row flex items-center rounded-2xl cursor-pointer"
-        >
-          <ChatBubbleLeftIcon
-            style={{ color: appContext?.theme.fgIcon }}
-            className="h-8 w-8 m-2"
-          />
-          <p className="hidden lg:inline-flex align-middle pr-2 my-auto font-semibold">
-            {appContext?.idiome.touch}
-          </p>
+          {appContext?.idiome.en === 'Ingles' ? (
+            <GlobeAsiaAustraliaIcon
+              style={{ color: appContext?.theme.fgIcon }}
+              className="h-8 w-8 m-2"
+            />
+          ) : (
+            <GlobeAmericasIcon
+              style={{ color: appContext?.theme.fgIcon }}
+              className="h-8 w-8 m-2"
+            />
+          )}
         </div>
       </div>
       <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div
-            initial={{ y: -50, x: 20, opacity: 0, scale: 0.8 }}
-            animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}
-            exit={{ y: -50, x: 20, scale: [1, 0.8], opacity: [1, 0] }}
+            initial={{ y: -5, opacity: 0 }}
+            animate={{ y: 0, opacity: [0.1, 1] }}
+            exit={{ y: -5, opacity: [0.5, 0] }}
             transition={{ duration: 0.1 }}
             style={{
-              background: appContext?.theme.bgCard,
+              background: appContext?.theme.bgIcon,
             }}
-            className="absolute top-[75px] w-full md:rounded-2xl md:w-48 md:right-40 py-3 px-2 z-50"
+            onMouseLeave={() => setOpen(false)}
+            className="absolute top-[74px] md:top-[58px] md:w-32 w-[60%] rounded-b-2xl md:right-5 z-50"
           >
-            <div
-              style={{
-                background: appContext?.theme.bgItem,
-              }}
-              onClick={() => {
-                setOpen(false)
-                appContext?.bla('en')
-              }}
-              className="mb-2 p-2 gap-2  rounded-2xl items-center cursor-pointer flex-row flex"
-            >
-              <GlobeAmericasIcon
-                style={{ color: appContext?.theme.fgIcon }}
-                className="h-8 w-8"
-              />
-              {appContext?.idiome.en}
-            </div>
-            <div
-              style={{
-                background: appContext?.theme.bgItem,
-              }}
-              onClick={() => {
-                setOpen(false)
-                appContext?.bla('es')
-              }}
-              className=" p-2 gap-2 rounded-2xl items-center cursor-pointer flex-row flex"
-            >
-              <GlobeAsiaAustraliaIcon
-                style={{ color: appContext?.theme.fgIcon }}
-                className="h-8 w-8"
-              />
-              {appContext?.idiome.es}
-            </div>
+            {[
+              { lenguaje: appContext?.idiome.en, idiome: 'en' },
+              { lenguaje: appContext?.idiome.es, idiome: 'es' },
+              { lenguaje: appContext?.idiome.pt, idiome: 'pt' },
+            ]
+              .filter((e) => e.idiome != appContext?.lenguaje)
+              .map((e) => (
+                <div
+                  onClick={() => {
+                    setOpen(false)
+                    appContext?.bla(e.idiome)
+                  }}
+                  className="p-2 rounded-2xl hover:font-semibold justify-between items-center cursor-pointer flex-row flex"
+                >
+                  {e.lenguaje}
+                </div>
+              ))}
           </motion.div>
         )}
       </AnimatePresence>

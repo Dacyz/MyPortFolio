@@ -23,7 +23,7 @@ function WorkExperience({}: Props) {
       viewport={{
         once: true,
       }}
-      className="flex flex-col relative text-center h-screen justify-center items-center z-0 overflow-hidden"
+      className="flex flex-col relative text-center justify-center items-center z-0 overflow-hidden"
     >
       {/* Desabilite el titulo por campatibilidades */}
       <h3 className="sectionInLineTitle">
@@ -58,10 +58,11 @@ function WorkExperience({}: Props) {
       </div>
       <div className="w-full flex overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7AB01]/80">
         <div className=" md:ml-32"></div>
-        {appContext?.idiome.experience.achievements.map((e) =>
+        {appContext?.idiome.experience.achievements.map((e, i) =>
           e.type ? (
             select == 0 || select == 1 ? (
               <ExperienceCard
+              key={i}
                 title={e.title}
                 img={e.img}
                 date={e.date}
@@ -74,6 +75,7 @@ function WorkExperience({}: Props) {
             )
           ) : select == 0 || select == 2 ? (
             <AchievementCard
+              key={i}
               title={e.title}
               img={e.img}
               date={e.date}

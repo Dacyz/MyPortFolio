@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Dacy's Portfolio</title>
       </Head>
-      
+
       {/* Header */}
       <Header />
       {/* Hero */}
@@ -37,23 +37,23 @@ const Home: NextPage = () => {
         <Skills />
       </section>
       {/* Projects */}
-      <section id="projects" className="snap-center ">
+      <section id="projects" className="snap-center">
         <Projects />
       </section>
       {/* Contact Me */}
       <section id="contact" className="snap-center ">
         <ContactMe />
       </section>
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full ">
-          <div className="flex items-center justify-center">
+      <footer className="sticky bottom-5 w-full">
+        <div className="flex items-center justify-center">
+          <Link href="#hero">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://pbs.twimg.com/profile_images/1580390485855801344/CdhXnp5U_400x400.jpg"
-            ></img>
-          </div>
-        </footer>
-      </Link>
+            />
+          </Link>
+        </div>
+      </footer>
     </Template>
   )
 }

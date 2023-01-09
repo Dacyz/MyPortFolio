@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Autoplay } from "swiper";
+import SwiperCore, { Autoplay } from 'swiper'
+import { FullContext } from '../context/Context'
 import 'swiper/css'
+import Link from 'next/link'
 
 type Props = {}
 
 function Projects({}: Props) {
-
   SwiperCore.use([Autoplay])
-  const projects = [1, 2, 3, 4]
+  const appContext = useContext(FullContext)
   return (
     <motion.div
       initial={{
@@ -19,56 +20,68 @@ function Projects({}: Props) {
         opacity: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 2,
       }}
-      className="sectionConfig"
+      className="justify-center flex-col flex h-screen"
     >
-      <h3 className="sectionTitle">Projects</h3>
-      <Swiper autoplay={{
-        delay: 2000
-      }} loop={true } slidesPerView={1}>
-        {projects.map((projec, i) => (
-          <SwiperSlide>
-            <div
-              key={i}
-              className="w-fit flex-shrink-0  snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
-            >
-              <motion.img
-                initial={{
-                  scale: 0.8,
-                }}
-                whileInView={{
-                  scale: 1,
-                }}
-                transition={{
-                  duration: 1.5,
-                }}
-                src="https://res.cloudinary.com/practicaldev/image/fetch/s--pOjS9Uad--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vg8z9mc7bf0n9a9xoanf.png"
-                className="w-72 h-100"
-              />
-              <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                <h4 className="text-4xl font-semibold text-center">
-                  <span className="underline decoration-[#F7AB0A]/50">
-                    {' '}
-                    Case Study {i + 1} of {projects.length}:
-                  </span>{' '}
-                  UPS clone
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, ut eligendi laboriosam veniam optio fugit officiis
-                  distinctio modi sint in, itaque animi numquam dicta corrupti
-                  nihil provident, quae culpa at? Lorem ipsum dolo
-                </p>
+      <h3 className="sectionInLineTitle">
+        {appContext?.idiome.sections.projects}
+      </h3>
+      <div>
+        <Swiper
+          autoplay={{
+            delay: 2000,
+          }}
+          loop={true}
+          slidesPerView={1}
+        >
+          {appContext?.idiome.projects.data.map((projec, i) => (
+            <SwiperSlide key={i}>
+              <div className="w-full snap-center flex flex-col space-y-2 items-center justify-center p-2 md:p-4">
+                <img src={projec.img} className="w-[70%] md:w-[40%]" />
+                <div className="space-y-2 px-5 md:px-10 max-w-6xl">
+                  <h4 className="text-4xl font-semibold text-center">
+                    {projec.name}
+                  </h4>
+
+                  <p className="text-center">{projec.desc}</p>
+                  <h5 className="font-semibold text-center">
+                    {appContext.idiome.projects.tech}
+                  </h5>
+                  <div className="flex gap-1 justify-center my-2 overflow-hidden">
+                    {projec.technic?.map((a, i) => (
+                      <Link key={i} href={'/#skills'}>
+                        <img
+                          src={a}
+                          className="w-10 h-10 m-1 rounded-full hover:outline outline-1 object-cover"
+                        />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex flex-row gap-3">
+                  <Link href={projec.href} target="_blank">
+                    <div className="heroButton">
+                      {appContext.idiome.projects.more}
+                    </div>
+                  </Link>
+                  {projec.demo != '' ? (
+                    <Link href={projec.href} target="_blank">
+                      <div className="heroButton">
+                        {appContext.idiome.projects.demo}
+                      </div>
+                    </Link>
+                  ) : (
+                    <div className="heroButtonDisabled">
+                      {appContext.idiome.projects.ntdemo}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-mandatory snap-x z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7AB01]/80">
-        
-        <div></div>
-      </div> */}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </motion.div>
   )
 }

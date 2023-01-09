@@ -49,8 +49,8 @@ export default function ExperienceCard({
               <h4 className="font-bold text-start text-2xl">{title}</h4>
               <p className="uppercase ml-2">{date}</p>
               <div className="flex space-x-2 justify-center md:justify-start my-1">
-                {code?.map((a) => (
-                  <img src={a} className="w-10 h-10 rounded-full" />
+                {code?.map((a, i) => (
+                  <img src={a} key={i} className="w-10 h-10 rounded-full" />
                 ))}
               </div>
             </div>

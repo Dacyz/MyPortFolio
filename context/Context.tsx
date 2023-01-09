@@ -4,6 +4,7 @@ import { listTheme } from '../data/theme'
 
 const miau = {
   bla: (a: string) => {},
+  lenguaje: 'en',
   themeMode: true,
   setThemeMode: (a: boolean) => {},
   idiome: listLenguages.en,
@@ -25,7 +26,9 @@ export function FullContextProvider({ children }: Props) {
   useEffect(() => {
     language === 'en'
       ? setProperties(listLenguages.en)
-      : setProperties(listLenguages.es)
+      : language === 'es'
+      ? setProperties(listLenguages.es)
+      : setProperties(listLenguages.pt)
   }, [language])
 
   useEffect(() => {
@@ -51,6 +54,7 @@ export function FullContextProvider({ children }: Props) {
   return (
     <FullContext.Provider
       value={{
+        lenguaje: language,
         bla: setLengua,
         themeMode: mode,
         setThemeMode: setThemeMode,
