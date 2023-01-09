@@ -136,8 +136,9 @@ export default function Header({}: Props) {
               { lenguaje: appContext?.idiome.pt, idiome: 'pt' },
             ]
               .filter((e) => e.idiome != appContext?.lenguaje)
-              .map((e) => (
+              .map((e, i) => (
                 <div
+                  key={i}
                   onClick={() => {
                     setOpen(false)
                     appContext?.bla(e.idiome)

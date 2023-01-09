@@ -5,6 +5,7 @@ import SwiperCore, { Autoplay } from 'swiper'
 import { FullContext } from '../context/Context'
 import 'swiper/css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -38,7 +39,7 @@ function Projects({}: Props) {
           {appContext?.idiome.projects.data.map((projec, i) => (
             <SwiperSlide key={i}>
               <div className="w-full snap-center flex flex-col space-y-2 items-center justify-center p-2 md:p-4">
-                <img src={projec.img} className="w-[70%] md:w-[40%]" />
+                <Image alt="" src={projec.img} className="w-[70%] md:w-[40%]" />
                 <div className="space-y-2 px-5 md:px-10 max-w-6xl">
                   <h4 className="text-4xl font-semibold text-center">
                     {projec.name}
@@ -51,7 +52,8 @@ function Projects({}: Props) {
                   <div className="flex gap-1 justify-center my-2 overflow-hidden">
                     {projec.technic?.map((a, i) => (
                       <Link key={i} href={'/#skills'}>
-                        <img
+                        <Image
+                          alt=""
                           src={a}
                           className="w-10 h-10 m-1 rounded-full hover:outline outline-1 object-cover"
                         />
