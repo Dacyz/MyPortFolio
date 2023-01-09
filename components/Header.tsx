@@ -59,7 +59,12 @@ export default function Header({}: Props) {
       {/* Settings Buttons */}
       <div className=" flex-row items-center gap-2 flex">
         {/* Resume Button */}
-        <Link href={'/api/getPDF'}>
+        <Link
+          href={
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FCurriculum%20profesional.pdf?alt=media&token=a50923da-fe45-4395-82af-26cdf0f993b4'
+          }
+          target="_blank"
+        >
           <div
             style={{
               background: appContext?.theme.bgButton,

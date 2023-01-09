@@ -250,7 +250,7 @@ export const listLenguages = {
             'https://i0.wp.com/gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo.png?fit=781%2C781&ssl=1',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa'
           ],
-          img: '/images/LightConsume.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FLightConsume.png?alt=media&token=cdd71c39-6835-42f8-8af3-5e474a646451',
           desc:
             'Programa de escritorio para el control de recibos electricos y calculo de consumo de electrodomesticos.',
           href: 'https://github.com/Dacyz/LightConsume',
@@ -261,7 +261,7 @@ export const listLenguages = {
           technic: [
             'https://www.ensenalia.com/wp-content/uploads/2017/06/Java_programming_language_logo..png',
           ],
-          img: '/images/ContadorFMS.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FContadorFMS.png?alt=media&token=9e98379a-4b8a-48ad-946a-343e1f116526',
           desc:
             'Programa de escritorio para el entrenamiento y puntuación de batallas de gallos.',
           href: 'https://github.com/Dacyz/Contador-Fms',
@@ -273,7 +273,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-android.png?alt=media&token=a9009a30-e9fe-494a-94ab-7bde34c37614',
           ],
-          img: '/images/Diabetrometro.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FDiabetrometro.png?alt=media&token=44093518-a8de-4749-8fa5-d1098b0b535c',
           desc:
             'Aplicativo movil para el control de la ingesta alimenticia, ejercicios fisicos y glucosa en la sangre.',
           href: 'https://github.com/Dacyz/DiabetrometroApp',
@@ -286,7 +286,7 @@ export const listLenguages = {
             'https://mloorxyis2tz.i.optimole.com/cb:SGrx~a326/w:270/h:270/q:mauto/https://doubleyolk.com/wp-content/uploads/2022/02/path2747.png',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-unity.png?alt=media&token=83dfd89b-d02b-4753-920c-3322ffad26c4',
           ],
-          img: '/images/ISGReports.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FISGReports.png?alt=media&token=e6387883-8c5f-4535-a6f0-878abc1a33d7',
           desc:
             'Aplicativo movil para el control del registro de estado y reportes en proyectos de contrucción para la empresa Inserge.',
           href: 'https://github.com/Dacyz/ISG-CReports',
@@ -299,7 +299,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-tflow.png?alt=media&token=ce31c322-68d1-4d3c-801a-838a9429ee7d',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-numpy.png?alt=media&token=9152434f-9460-4d7e-a388-17609ae4cf12',
           ],
-          img: '/images/IALenguage.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FIALenguage.png?alt=media&token=5fdd856b-2946-491b-8015-7df1fa4094c9',
           desc:
             'API para la interpretacion y procesamiento del lenguaje natural a lenguaje de consultas mediante redes neuronales',
           href: 'https://github.com/Dacyz/interpretation-system-inserge',
@@ -313,7 +313,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-boostrap.png?alt=media&token=0292c58a-4485-4cb9-ac82-b997e57eda57',
             'https://icon-library.com/images/jquery-icon/jquery-icon-2.jpg',
           ],
-          img: '/images/InsergeLogistic.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FInsergeLogistic.png?alt=media&token=8c599aa5-6650-46cd-8185-3cef17e35c7b',
           desc:
             'Sistema web para agilizar y mejorar el área de logistica basado en los procesos, requerimientos funcionales y no funcionales.',
           href: 'https://github.com/Dacyz/inserge-logistic-system',
@@ -572,7 +572,7 @@ export const listLenguages = {
             'https://i0.wp.com/gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo.png?fit=781%2C781&ssl=1',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa'
           ],
-          img: '/images/LightConsume.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FLightConsume.png?alt=media&token=cdd71c39-6835-42f8-8af3-5e474a646451',
           desc:
             'Desktop program for the control of electric bills and calculation of consumption of household appliances.',
           href: 'https://github.com/Dacyz/LightConsume',
@@ -583,7 +583,7 @@ export const listLenguages = {
           technic: [
             'https://www.ensenalia.com/wp-content/uploads/2017/06/Java_programming_language_logo..png',
           ],
-          img: '/images/ContadorFMS.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FContadorFMS.png?alt=media&token=9e98379a-4b8a-48ad-946a-343e1f116526',
           desc: 'Desktop program for training and scoring cockfights.',
           href: 'https://github.com/Dacyz/Contador-Fms',
           demo: '',
@@ -594,7 +594,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-android.png?alt=media&token=a9009a30-e9fe-494a-94ab-7bde34c37614',
           ],
-          img: '/images/Diabetrometro.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FDiabetrometro.png?alt=media&token=44093518-a8de-4749-8fa5-d1098b0b535c',
           desc:
             'Mobile application for the control of food intake, physical exercises and blood glucose.',
           href: 'https://github.com/Dacyz/DiabetrometroApp',
@@ -607,7 +607,7 @@ export const listLenguages = {
             'https://mloorxyis2tz.i.optimole.com/cb:SGrx~a326/w:270/h:270/q:mauto/https://doubleyolk.com/wp-content/uploads/2022/02/path2747.png',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-unity.png?alt=media&token=83dfd89b-d02b-4753-920c-3322ffad26c4',
           ],
-          img: '/images/ISGReports.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FISGReports.png?alt=media&token=e6387883-8c5f-4535-a6f0-878abc1a33d7',
           desc:
             'Mobile application for the control of the status registry and reports in construction projects for the company Inserge.',
           href: 'https://github.com/Dacyz/ISG-CReports',
@@ -620,7 +620,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-tflow.png?alt=media&token=ce31c322-68d1-4d3c-801a-838a9429ee7d',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-numpy.png?alt=media&token=9152434f-9460-4d7e-a388-17609ae4cf12',
           ],
-          img: '/images/IALenguage.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FIALenguage.png?alt=media&token=5fdd856b-2946-491b-8015-7df1fa4094c9',
           desc:
             'API for the interpretation and processing of natural language to query language through neural networks',
           href: 'https://github.com/Dacyz/interpretation-system-inserge',
@@ -634,7 +634,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-boostrap.png?alt=media&token=0292c58a-4485-4cb9-ac82-b997e57eda57',
             'https://icon-library.com/images/jquery-icon/jquery-icon-2.jpg',
           ],
-          img: '/images/InsergeLogistic.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FInsergeLogistic.png?alt=media&token=8c599aa5-6650-46cd-8185-3cef17e35c7b',
           desc:
             'Web system to streamline and improve the logistics area based on processes, functional and non-functional requirements.',
           href: 'https://github.com/Dacyz/inserge-logistic-system',
@@ -893,7 +893,7 @@ export const listLenguages = {
             'https://i0.wp.com/gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo.png?fit=781%2C781&ssl=1',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa'
           ],
-          img: '/images/LightConsume.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FLightConsume.png?alt=media&token=cdd71c39-6835-42f8-8af3-5e474a646451',
           desc:
             'Programa desktop para controle de contas de energia elétrica e cálculo de consumo de eletrodomésticos.',
           href: 'https://github.com/Dacyz/LightConsume',
@@ -904,7 +904,7 @@ export const listLenguages = {
           technic: [
             'https://www.ensenalia.com/wp-content/uploads/2017/06/Java_programming_language_logo..png',
           ],
-          img: '/images/ContadorFMS.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FContadorFMS.png?alt=media&token=9e98379a-4b8a-48ad-946a-343e1f116526',
           desc: 'Programa de desktop para treinar e pontuar brigas de galos.',
           href: 'https://github.com/Dacyz/Contador-Fms',
           demo: '',
@@ -915,7 +915,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-android.png?alt=media&token=a9009a30-e9fe-494a-94ab-7bde34c37614',
           ],
-          img: '/images/Diabetrometro.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FDiabetrometro.png?alt=media&token=44093518-a8de-4749-8fa5-d1098b0b535c',
           desc:
             'Aplicativo móvel para controle de ingestão alimentar, exercícios físicos e glicemia.',
           href: 'https://github.com/Dacyz/DiabetrometroApp',
@@ -928,7 +928,7 @@ export const listLenguages = {
             'https://mloorxyis2tz.i.optimole.com/cb:SGrx~a326/w:270/h:270/q:mauto/https://doubleyolk.com/wp-content/uploads/2022/02/path2747.png',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-unity.png?alt=media&token=83dfd89b-d02b-4753-920c-3322ffad26c4',
           ],
-          img: '/images/ISGReports.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FISGReports.png?alt=media&token=e6387883-8c5f-4535-a6f0-878abc1a33d7',
           desc:
             'Aplicação móvel para o controlo do registo de estado e relatórios em projetos de construção para a empresa Inserge.',
           href: 'https://github.com/Dacyz/ISG-CReports',
@@ -941,7 +941,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-tflow.png?alt=media&token=ce31c322-68d1-4d3c-801a-838a9429ee7d',
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-numpy.png?alt=media&token=9152434f-9460-4d7e-a388-17609ae4cf12',
           ],
-          img: '/images/IALenguage.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FIALenguage.png?alt=media&token=5fdd856b-2946-491b-8015-7df1fa4094c9',
           desc:
             'API para interpretação e processamento de linguagem natural para consulta de linguagem através de redes neurais.',
           href: 'https://github.com/Dacyz/interpretation-system-inserge',
@@ -955,7 +955,7 @@ export const listLenguages = {
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-boostrap.png?alt=media&token=0292c58a-4485-4cb9-ac82-b997e57eda57',
             'https://icon-library.com/images/jquery-icon/jquery-icon-2.jpg',
           ],
-          img: '/images/InsergeLogistic.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FInsergeLogistic.png?alt=media&token=8c599aa5-6650-46cd-8185-3cef17e35c7b',
           desc:
             'Sistema web para agilizar e melhorar a área de logística com base em processos, requisitos funcionais e não funcionais.',
           href: 'https://github.com/Dacyz/inserge-logistic-system',
