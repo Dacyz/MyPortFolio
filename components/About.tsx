@@ -24,7 +24,7 @@ function About({}: Props) {
         {appContext?.idiome.sections.about}
       </h3>
       <div className="flex flex-col relative text-center lg:px-20 md:text-left  md:flex-row max-w-7xl px-10 justify-center mx-auto items-center z-0 overflow-hidden">
-        <motion.img
+        <motion.div
           initial={{
             x: -200,
             opacity: 0,
@@ -39,9 +39,13 @@ function About({}: Props) {
           transition={{
             duration: 1,
           }}
-          src="https://pbs.twimg.com/profile_images/1580390485855801344/CdhXnp5U_400x400.jpg"
-          className="md:mb-0 flex-shrink-0 w-48  h-32 rounded-full justify-center items-center object-cover md:rounded-lg md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px]"
-        />
+          className="md:mb-0 flex-shrink-0 overflow-hidden w-48 h-32 rounded-full justify-center items-center  md:rounded-lg md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px]"
+        >
+          <img
+            src="./images/Playa de fondo.jpg"
+            className="object-cover md:mb-0 md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px] overflow-hidden flex-shrink-0"
+          />
+        </motion.div>
         <motion.div
           initial={{
             x: 200,
@@ -65,27 +69,35 @@ function About({}: Props) {
           <p className="overflow-y-scroll max-h-52 md:overflow-hidden md:h-auto text-base my-2">
             {appContext?.idiome.about.description}
           </p>
-          <h4 className="text-1xl font-semibold m-2">{appContext?.idiome.about.lenguaje}</h4>
+          <h4 className="text-1xl font-semibold m-2">
+            {appContext?.idiome.about.lenguaje}
+          </h4>
           <div className="flex flex-col md:flex-row gap-2 ">
             <div className="bg-gray-300 h-6 w-full rounded-2xl md:mb-10">
               <div className="bg-blue-400 h-6 w-[100%] flex flex-row justify-center gap-2 font-semibold rounded-2xl text-center">
                 100%
                 <div className="md:hidden">-</div>
-                <div className="md:absolute justify-start md:mt-6">{appContext?.idiome.es}</div>
+                <div className="md:absolute justify-start md:mt-6">
+                  {appContext?.idiome.es}
+                </div>
               </div>
             </div>
             <div className="bg-gray-400 h-6 w-full rounded-2xl md:mb-10">
               <div className="bg-blue-400 h-6 w-[85%] flex flex-row justify-center gap-2 font-semibold rounded-2xl text-center">
                 85%
                 <div className="md:hidden">-</div>
-                <div className="md:absolute justify-start md:mt-6">{appContext?.idiome.en}</div>
+                <div className="md:absolute justify-start md:mt-6">
+                  {appContext?.idiome.en}
+                </div>
               </div>
             </div>
             <div className="bg-gray-400 h-6 w-full rounded-2xl md:mb-10">
               <div className="bg-blue-400 h-6 w-[45%] flex flex-row justify-center gap-2 font-semibold rounded-2xl text-center">
                 45%
                 <div className="md:hidden">-</div>
-                <div className="md:absolute justify-start md:mt-6">{appContext?.idiome.pt}</div>
+                <div className="md:absolute justify-start md:mt-6">
+                  {appContext?.idiome.pt}
+                </div>
               </div>
             </div>
           </div>

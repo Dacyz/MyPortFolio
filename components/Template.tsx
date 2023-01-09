@@ -13,7 +13,7 @@ function Template({ children }: Props) {
         background: appContext?.theme.bgFull,
         color:appContext?.theme.fgText,
       }}
-      className="h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7AB01]/80"
+      className="h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-blue-500/80"
     >
       {children}
     </div>

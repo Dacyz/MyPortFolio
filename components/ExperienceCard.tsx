@@ -37,7 +37,7 @@ export default function ExperienceCard({
         style={{
           background: theme ? 'rgb(25,25,25)' : 'rgb(245,245,245)',
         }}
-        className="shadow-2xl flex border border-transparent hover:border-yellow-600 rounded-lg max-h-[500px] w-[350px] h-[450px] md:w-[500px] opacity-80 hover:opacity-100 items-center align-middle transition-opacity duration-200 px-4 overflow-hidden"
+        className="shadow-2xl flex border border-transparent hover:border-blue-600 rounded-lg max-h-[500px] w-[350px] h-[450px] md:w-[500px] opacity-80 hover:opacity-100 items-center align-middle transition-opacity duration-200 px-4 overflow-hidden"
       >
         <div>
           <div className="flex flex-col md:flex-row">

@@ -56,7 +56,7 @@ function WorkExperience({}: Props) {
           ? appContext?.idiome.experience.subtitleOn
           : appContext?.idiome.experience.subtitleOff}
       </div>
-      <div className="w-full flex overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7AB01]/80">
+      <div className="w-full flex overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-blue-500/80">
         <div className=" md:ml-32"></div>
         {appContext?.idiome.experience.achievements.map((e, i) =>
           e.type ? (

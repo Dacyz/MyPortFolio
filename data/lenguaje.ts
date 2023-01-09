@@ -244,6 +244,19 @@ export const listLenguages = {
       tech: 'Tecnologias',
       data: [
         {
+          name: 'LightConsume',
+          technic: [
+            'https://www.qfs.de/fileadmin/Webdata/logos-icons/JavaFX.png',
+            'https://i0.wp.com/gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo.png?fit=781%2C781&ssl=1',
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa'
+          ],
+          img: '/images/LightConsume.png',
+          desc:
+            'Programa de escritorio para el control de recibos electricos y calculo de consumo de electrodomesticos.',
+          href: 'https://github.com/Dacyz/LightConsume',
+          demo: '',
+        },
+        {
           name: 'Contador FMS',
           technic: [
             'https://www.ensenalia.com/wp-content/uploads/2017/06/Java_programming_language_logo..png',
@@ -553,6 +566,19 @@ export const listLenguages = {
       tech: 'Technologies',
       data: [
         {
+          name: 'LightConsume',
+          technic: [
+            'https://www.qfs.de/fileadmin/Webdata/logos-icons/JavaFX.png',
+            'https://i0.wp.com/gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo.png?fit=781%2C781&ssl=1',
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa'
+          ],
+          img: '/images/LightConsume.png',
+          desc:
+            'Desktop program for the control of electric bills and calculation of consumption of household appliances.',
+          href: 'https://github.com/Dacyz/LightConsume',
+          demo: '',
+        },
+        {
           name: 'Contador FMS',
           technic: [
             'https://www.ensenalia.com/wp-content/uploads/2017/06/Java_programming_language_logo..png',
@@ -856,10 +882,23 @@ export const listLenguages = {
     },
     projects: {
       demo: 'Demonstração',
-      ntdemo: 'Demonstração não disponível',
+      ntdemo: 'Demo não disponível',
       more: 'Mais detalhes',
       tech: 'Tecnologias',
       data: [
+        {
+          name: 'LightConsume',
+          technic: [
+            'https://www.qfs.de/fileadmin/Webdata/logos-icons/JavaFX.png',
+            'https://i0.wp.com/gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo.png?fit=781%2C781&ssl=1',
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-sqlserver.png?alt=media&token=7cbc6daf-1c66-4193-b384-9ab8a66b3faa'
+          ],
+          img: '/images/LightConsume.png',
+          desc:
+            'Programa desktop para controle de contas de energia elétrica e cálculo de consumo de eletrodomésticos.',
+          href: 'https://github.com/Dacyz/LightConsume',
+          demo: '',
+        },
         {
           name: 'Contador FMS',
           technic: [

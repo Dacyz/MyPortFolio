@@ -8,7 +8,7 @@ type Props = {}
 
 export default function Hero({}: Props) {
   const appContext = useContext(FullContext)
-  const [text, count] = useTypewriter({
+  const [text, _] = useTypewriter({
     words: appContext?.idiome.hero.Words ?? [],
     loop: true,
     delaySpeed: 1800,
@@ -19,7 +19,7 @@ export default function Hero({}: Props) {
       <BackgroundCircles />
       <div className="z-20">
         <img
-          src="https://pbs.twimg.com/profile_images/1580390485855801344/CdhXnp5U_400x400.jpg"
+          src="./images/Foto formal.jpg"
           className="relative rounded-full h-32 w-32 mx-auto object-cover"
         />
         <div>
