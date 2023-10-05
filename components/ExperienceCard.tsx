@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import React from 'react'
 
 type Props = {
@@ -42,7 +41,7 @@ export default function ExperienceCard({
       >
         <div>
           <div className="flex flex-col md:flex-row">
-            <Image
+            <img
               alt="Experiencia laboral de Diego Arturo Yangua Merino"
               src={img}
               className="rounded-3xl w-[200px] mx-auto h-[200px] object-fill"

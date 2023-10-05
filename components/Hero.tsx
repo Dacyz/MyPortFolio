@@ -3,7 +3,6 @@ import React, { useContext } from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import { FullContext } from '../context/Context'
-import Image from 'next/image'
 
 type Props = {}
 
@@ -19,9 +18,11 @@ export default function Hero({}: Props) {
     <div className="h-screen align-middle flex flex-col space-y-8 justify-center items-center text-center overflow-hidden">
       <BackgroundCircles />
       <div className="z-20">
-        <Image
+        <img
           src="./images/Foto formal.jpg"
           alt='Diego Arturo Yangua Merino'
+          width={20}
+          height={100}
           className="relative rounded-full h-32 w-32 mx-auto object-cover"
         />
         <div>

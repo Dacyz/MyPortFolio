@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import About from '../components/About'
@@ -48,7 +47,7 @@ const Home: NextPage = () => {
       <footer className="sticky bottom-5 w-full">
         <div className="flex items-center justify-center">
           <Link href="#hero">
-            <Image
+            <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://pbs.twimg.com/profile_images/1580390485855801344/CdhXnp5U_400x400.jpg"
               alt={'Zero Two'}

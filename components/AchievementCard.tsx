@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import React from 'react'
 
 type Props = {
@@ -40,7 +39,7 @@ export default function AchievementCard({
         className="shadow-2xl flex border border-transparent hover:border-blue-600 rounded-lg max-h-[500px] w-[350px] h-[450px] md:w-[500px] opacity-80 hover:opacity-100 items-center align-middle transition-opacity duration-200 px-4 overflow-hidden"
       >
         <div>
-          <Image
+          <img
             src={img}
             alt='Logros de Diego Arturo Yangua Merino en la Universidad Cesar Vallejo'
             className="rounded-xl mb-2 max-h-[300px] w-full object-fill"
