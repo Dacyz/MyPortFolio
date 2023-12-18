@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import { FullContext } from '../context/Context'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -17,7 +18,7 @@ function About({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex flex-col justify-center"
+      className="md:h-[80vh] flex flex-col justify-center"
     >
       <h3 className="sectionInLineTitle">
         {appContext?.idiome.sections.about}
@@ -40,9 +41,11 @@ function About({}: Props) {
           }}
           className="md:mb-0 flex-shrink-0 overflow-hidden w-48 h-32 rounded-full justify-center items-center  md:rounded-lg md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px]"
         >
-          <img
-            src="./images/Playa de fondo.jpg"
+          <Image
+            src="/images/Playa de fondo.jpg"
             alt='Foto de playa de Diego Arturo Yangua Merino'
+            width={300}
+            height={100}
             className="object-cover md:mb-0 md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px] overflow-hidden flex-shrink-0"
           />
         </motion.div>

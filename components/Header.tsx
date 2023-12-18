@@ -1,22 +1,21 @@
-import React, { useContext, useState, useEffect } from 'react'
-import { SocialIcon } from 'react-social-icons'
+import React, { useContext, useState } from "react";
+import { SocialIcon } from "react-social-icons";
 import {
   GlobeAsiaAustraliaIcon,
   GlobeAmericasIcon,
   LightBulbIcon,
   MoonIcon,
   ArrowDownTrayIcon,
-} from '@heroicons/react/24/solid'
-import { motion, AnimatePresence } from 'framer-motion'
-import { FullContext } from '../context/Context'
-import Link from 'next/link'
-import handler from '../pages/api/getPDF'
+} from "@heroicons/react/24/solid";
+import { motion, AnimatePresence } from "framer-motion";
+import { FullContext } from "../context/Context";
+import Link from "next/link";
 
-type Props = {}
+type Props = {};
 
 export default function Header({}: Props) {
-  const [isOpen, setOpen] = useState(false)
-  const appContext = useContext(FullContext)
+  const [isOpen, setOpen] = useState(false);
+  const appContext = useContext(FullContext);
 
   return (
     <motion.header
@@ -30,10 +29,15 @@ export default function Header({}: Props) {
         opacity: 1,
         scale: 1,
       }}
+      exit={{
+        y: -50,
+        opacity: 0,
+        scale: 0.9,
+      }}
       transition={{
         duration: 1,
       }}
-      className="p-5 sticky flex top-0 gap-2 items-start justify-center md:justify-between max-w-7xl mx-auto z-20 xl:items-center"
+      className="p-3 absolute w-screen flex top-0 left-0 right-0 gap-2 justify-center md:justify-between max-w-7xl mx-auto z-20 xl:items-center"
     >
       {/* Social Icons */}
       <div className="flex flex-row gap-2 items-center">
@@ -61,7 +65,7 @@ export default function Header({}: Props) {
         {/* Resume Button */}
         <Link
           href={
-            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FCurriculum%20profesional.pdf?alt=media&token=a50923da-fe45-4395-82af-26cdf0f993b4'
+            "https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FCurriculum%20profesional.pdf?alt=media&token=a50923da-fe45-4395-82af-26cdf0f993b4"
           }
           target="_blank"
         >
@@ -86,7 +90,7 @@ export default function Header({}: Props) {
           style={{
             background: appContext?.theme.bgButton,
           }}
-          className="flex-row flex p-[5px]  rounded-full cursor-pointer"
+          className="flex-row flex p-[5px] rounded-full cursor-pointer"
         >
           {appContext?.themeMode ? (
             <MoonIcon className="h-6 w-6 text-[rgb(156,163,175)] m-2" />
@@ -103,13 +107,13 @@ export default function Header({}: Props) {
           onClick={() => setOpen(isOpen ? false : true)}
         >
           <div className="hidden md:inline-flex align-middle pl-2 my-auto font-semibold">
-            {appContext?.idiome.en === 'Ingles'
+            {appContext?.idiome.en === "Ingles"
               ? appContext?.idiome.es
-              : appContext?.idiome.en === 'Inglês'
+              : appContext?.idiome.en === "Inglês"
               ? appContext?.idiome.pt
               : appContext?.idiome.en}
           </div>
-          {appContext?.idiome.en === 'Ingles' ? (
+          {appContext?.idiome.en === "Ingles" ? (
             <GlobeAsiaAustraliaIcon
               style={{ color: appContext?.theme.fgIcon }}
               className="h-8 w-8 m-2"
@@ -136,17 +140,17 @@ export default function Header({}: Props) {
             className="absolute top-[74px] md:top-[58px] md:w-32 w-[60%] rounded-b-2xl md:right-5 z-50"
           >
             {[
-              { lenguaje: appContext?.idiome.en, idiome: 'en' },
-              { lenguaje: appContext?.idiome.es, idiome: 'es' },
-              { lenguaje: appContext?.idiome.pt, idiome: 'pt' },
+              { lenguaje: appContext?.idiome.en, idiome: "en" },
+              { lenguaje: appContext?.idiome.es, idiome: "es" },
+              { lenguaje: appContext?.idiome.pt, idiome: "pt" },
             ]
               .filter((e) => e.idiome != appContext?.lenguaje)
               .map((e, i) => (
                 <div
                   key={i}
                   onClick={() => {
-                    setOpen(false)
-                    appContext?.bla(e.idiome)
+                    setOpen(false);
+                    appContext?.bla(e.idiome);
                   }}
                   className="p-2 rounded-2xl hover:font-semibold justify-between items-center cursor-pointer flex-row flex"
                 >
@@ -157,5 +161,5 @@ export default function Header({}: Props) {
         )}
       </AnimatePresence>
     </motion.header>
-  )
+  );
 }
