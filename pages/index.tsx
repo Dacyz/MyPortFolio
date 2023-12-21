@@ -1,16 +1,16 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import About from '../components/About'
-import ContactMe from '../components/ContactMe'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import Projects from '../components/Projects'
-import Skills from '../components/Skills'
-import Template from '../components/Template'
-import WorkExperience from '../components/WorkExperience'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import React from "react";
+import About from "../components/About";
+import ContactMe from "../components/ContactMe";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import Template from "../components/Template";
+import WorkExperience from "../components/WorkExperience";
+import { ArrowUpIcon } from "@heroicons/react/24/solid";
 
 const Home: NextPage = () => {
   return (
@@ -48,16 +48,12 @@ const Home: NextPage = () => {
       <footer className="sticky bottom-5 w-full">
         <div className="flex items-center justify-center">
           <Link href="#hero">
-            <Image
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://pbs.twimg.com/profile_images/1580390485855801344/CdhXnp5U_400x400.jpg"
-              alt={'Zero Two'}
-            />
+            <ArrowUpIcon fontSize={16} width={24} height={24} color=""/>
           </Link>
         </div>
       </footer>
     </Template>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

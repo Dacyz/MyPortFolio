@@ -1,15 +1,15 @@
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import React from 'react'
+import { motion } from "framer-motion";
+import Image from "next/image";
+import React from "react";
 
 type Props = {
-  title?: string
-  img: string
-  desc?: string
-  date?: string
-  theme?: boolean
-  code?: string[]
-}
+  title?: string;
+  img: string;
+  desc?: string;
+  date?: string;
+  theme?: boolean;
+  code?: string[];
+};
 
 export default function ExperienceCard({
   title,
@@ -36,7 +36,7 @@ export default function ExperienceCard({
     >
       <div
         style={{
-          background: theme ? 'rgb(25,25,25)' : 'rgb(245,245,245)',
+          background: theme ? "rgb(25,25,25)" : "rgb(245,245,245)",
         }}
         className="shadow-2xl flex border border-transparent hover:border-blue-600 rounded-lg max-h-[500px] w-[350px] h-[450px] md:w-[500px] opacity-80 hover:opacity-100 items-center align-middle transition-opacity duration-200 px-4 overflow-hidden"
       >
@@ -45,6 +45,11 @@ export default function ExperienceCard({
             <Image
               alt="Experiencia laboral de Diego Arturo Yangua Merino"
               src={img}
+              style={{
+                objectFit: "scale-down",
+              }}
+              width={300}
+              height={300}
               className="rounded-3xl w-[200px] mx-auto h-[200px] object-fill"
             />
             <div className="pl-2">
@@ -52,7 +57,14 @@ export default function ExperienceCard({
               <p className="uppercase ml-2">{date}</p>
               <div className="flex space-x-2 justify-center md:justify-start my-1">
                 {code?.map((a, i) => (
-                  <img src={a} key={i} className="w-10 h-10 rounded-full" />
+                  <Image
+                    src={a}
+                    width={40}
+                    height={40}
+                    key={i}
+                    alt="Experience card"
+                    className="w-10 h-10 rounded-full"
+                  />
                 ))}
               </div>
             </div>
@@ -63,5 +75,5 @@ export default function ExperienceCard({
         </div>
       </div>
     </motion.article>
-  )
+  );
 }

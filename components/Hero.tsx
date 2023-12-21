@@ -20,7 +20,9 @@ export default function Hero({}: Props) {
       <BackgroundCircles />
       <div className="z-20">
         <Image
-          src="./images/Foto formal.jpg"
+          src="/images/Foto formal.jpg"
+          width={300}
+          height={300}
           alt='Diego Arturo Yangua Merino'
           className="relative rounded-full h-32 w-32 mx-auto object-cover"
         />

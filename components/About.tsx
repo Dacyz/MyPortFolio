@@ -43,7 +43,9 @@ function About({}: Props) {
           className="md:mb-0 flex-shrink-0 overflow-hidden w-48 h-32 rounded-full justify-center items-center  md:rounded-lg md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px]"
         >
           <Image
-            src="./images/Playa de fondo.jpg"
+            src="/images/Playa de fondo.jpg"
+            width={300}
+            height={300}
             alt='Foto de playa de Diego Arturo Yangua Merino'
             className="object-cover md:mb-0 md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px] overflow-hidden flex-shrink-0"
           />

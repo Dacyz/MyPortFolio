@@ -5,7 +5,7 @@ import { promisify } from 'util';
 import fetch from 'node-fetch';
 
 const pipeline = promisify(stream.pipeline);
-const url = 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FCurriculum%20profesional.pdf?alt=media&token=a50923da-fe45-4395-82af-26cdf0f993b4';
+const url = 'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Fresume-en.pdf?alt=media&token=f49a40e8-bbd2-4b2e-9cd1-2c3595a3b744';
 
 const handler = async (_, res) => {
   const response = await fetch(url); // replace this with your API call & options

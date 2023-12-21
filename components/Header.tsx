@@ -1,22 +1,22 @@
-import React, { useContext, useState, useEffect } from 'react'
-import { SocialIcon } from 'react-social-icons'
+import React, { useContext, useState, useEffect } from "react";
+import { SocialIcon } from "react-social-icons";
 import {
   GlobeAsiaAustraliaIcon,
   GlobeAmericasIcon,
   LightBulbIcon,
   MoonIcon,
   ArrowDownTrayIcon,
-} from '@heroicons/react/24/solid'
-import { motion, AnimatePresence } from 'framer-motion'
-import { FullContext } from '../context/Context'
-import Link from 'next/link'
-import handler from '../pages/api/getPDF'
+} from "@heroicons/react/24/solid";
+import { motion, AnimatePresence } from "framer-motion";
+import { FullContext } from "../context/Context";
+import Link from "next/link";
+import handler from "../pages/api/getPDF";
 
-type Props = {}
+type Props = {};
 
 export default function Header({}: Props) {
-  const [isOpen, setOpen] = useState(false)
-  const appContext = useContext(FullContext)
+  const [isOpen, setOpen] = useState(false);
+  const appContext = useContext(FullContext);
 
   return (
     <motion.header
@@ -61,7 +61,11 @@ export default function Header({}: Props) {
         {/* Resume Button */}
         <Link
           href={
-            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2FCurriculum%20profesional.pdf?alt=media&token=a50923da-fe45-4395-82af-26cdf0f993b4'
+            appContext?.lenguaje == "en"
+              ? "https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Fresume-en.pdf?alt=media&token=f49a40e8-bbd2-4b2e-9cd1-2c3595a3b744"
+              : appContext?.lenguaje == "pt"
+              ? "https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Fresume-pt.pdf?alt=media&token=c10744b6-77cb-4f55-a45a-7e310cadceeb"
+              : "https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Fresume-es.pdf?alt=media&token=ad9685c6-70c5-44e2-aebc-a14e37ab0c5d"
           }
           target="_blank"
         >
@@ -103,13 +107,13 @@ export default function Header({}: Props) {
           onClick={() => setOpen(isOpen ? false : true)}
         >
           <div className="hidden md:inline-flex align-middle pl-2 my-auto font-semibold">
-            {appContext?.idiome.en === 'Ingles'
+            {appContext?.idiome.en === "Ingles"
               ? appContext?.idiome.es
-              : appContext?.idiome.en === 'Inglês'
+              : appContext?.idiome.en === "Inglês"
               ? appContext?.idiome.pt
               : appContext?.idiome.en}
           </div>
-          {appContext?.idiome.en === 'Ingles' ? (
+          {appContext?.idiome.en === "Ingles" ? (
             <GlobeAsiaAustraliaIcon
               style={{ color: appContext?.theme.fgIcon }}
               className="h-8 w-8 m-2"
@@ -136,17 +140,17 @@ export default function Header({}: Props) {
             className="absolute top-[74px] md:top-[58px] md:w-32 w-[60%] rounded-b-2xl md:right-5 z-50"
           >
             {[
-              { lenguaje: appContext?.idiome.en, idiome: 'en' },
-              { lenguaje: appContext?.idiome.es, idiome: 'es' },
-              { lenguaje: appContext?.idiome.pt, idiome: 'pt' },
+              { lenguaje: appContext?.idiome.en, idiome: "en" },
+              { lenguaje: appContext?.idiome.es, idiome: "es" },
+              { lenguaje: appContext?.idiome.pt, idiome: "pt" },
             ]
               .filter((e) => e.idiome != appContext?.lenguaje)
               .map((e, i) => (
                 <div
                   key={i}
                   onClick={() => {
-                    setOpen(false)
-                    appContext?.bla(e.idiome)
+                    setOpen(false);
+                    appContext?.bla(e.idiome);
                   }}
                   className="p-2 rounded-2xl hover:font-semibold justify-between items-center cursor-pointer flex-row flex"
                 >
@@ -157,5 +161,5 @@ export default function Header({}: Props) {
         )}
       </AnimatePresence>
     </motion.header>
-  )
+  );
 }

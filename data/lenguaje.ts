@@ -33,6 +33,19 @@ export const listLenguages = {
       subtitleOff: 'Cliquea nuevamente para remover filtros',
       achievements: [
         {
+          title: 'Desarrollador mobile',
+          desc:
+            'Desarrollo, integración y despliegue de proyectos (Android & ios): Ubikate v2, Spiralia v2, Meraki, etc. Re-diseño, reestructuración y optimización de recursos (Localización, patrón BloC, custom widgets, etc.).',
+          date: '08-01-2023 / Actualidad',
+          img:
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffractal-logo.png?alt=media&token=2892c617-e2a8-44eb-b6b9-9c55bb8cc8fb',
+          type: true,
+          code: [
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-flutter.png?alt=media&token=5fe8491d-b4a7-4dd2-9bf6-c09ca8ab76d5',
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffirebase-logo.png?alt=media&token=45c3d4c2-2706-4897-881f-e08db96e7649'
+          ],
+        },
+        {
           title: 'Practicante de Sistemas',
           desc:
             'Durante mi estancia en Ingenieria y Servicios generales Piura S.A.C. se me asigno desarrollar varios proyectos desde aplicativos moviles, sistemas web o programas desktop para distintas areas funcionales de la empresa.',
@@ -356,6 +369,19 @@ export const listLenguages = {
       subtitleOff: 'Click again for remove filter',
       achievements: [
         {
+          title: 'Mobile developer',
+          desc:
+            'Development, integration and deployment of projects (Android & ios): Ubikate v2, Spiralia v2, Meraki, etc. Re-design, restructuring and optimization of resources (Localization, BloC pattern, custom widgets, etc.).',
+          date: '01-08-2023 / Present',
+          img:
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffractal-logo.png?alt=media&token=2892c617-e2a8-44eb-b6b9-9c55bb8cc8fb',
+          type: true,
+          code: [
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-flutter.png?alt=media&token=5fe8491d-b4a7-4dd2-9bf6-c09ca8ab76d5',
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffirebase-logo.png?alt=media&token=45c3d4c2-2706-4897-881f-e08db96e7649'
+          ],
+        },
+        {
           title: 'Systems Engineering Intern',
           desc:
             'During my stay at Ingenieria y Servicios Generales Piura S.A.C. I was assigned to develop several projects from mobile applications, web systems or desktop programs for different functional areas of the company.',
@@ -676,6 +702,19 @@ export const listLenguages = {
       subtitleOn: 'Passe o mouse para aplicar filtro',
       subtitleOff: 'Clique novamente para remover o filtro',
       achievements: [
+        {
+          title: 'Desenvolvedor móvel',
+          desc:
+            'Desenvolvimento, integração e implantação de projetos (Android e ios): Ubikate v2, Spiralia v2, Meraki, etc. Redesenho, reestruturação e otimização de recursos (Localização, padrão BloC, widgets customizados, etc.).',
+          date: '01-08-2023 / Presente',
+          img:
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffractal-logo.png?alt=media&token=2892c617-e2a8-44eb-b6b9-9c55bb8cc8fb',
+          type: true,
+          code: [
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Flogo-flutter.png?alt=media&token=5fe8491d-b4a7-4dd2-9bf6-c09ca8ab76d5',
+            'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffirebase-logo.png?alt=media&token=45c3d4c2-2706-4897-881f-e08db96e7649'
+          ],
+        },
         {
           title: 'Estagiário de Engenharia de Sistemas',
           desc:

@@ -1,25 +1,25 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { XMarkIcon } from '@heroicons/react/24/solid'
-import { SocialIcon } from 'react-social-icons'
-import Link from 'next/link'
-import { parseUrl } from 'next/dist/shared/lib/router/utils/parse-url'
-import Image from 'next/image'
+import React from "react";
+import { motion } from "framer-motion";
+import { XMarkIcon } from "@heroicons/react/24/solid";
+import { SocialIcon } from "react-social-icons";
+import Link from "next/link";
+import { parseUrl } from "next/dist/shared/lib/router/utils/parse-url";
+import Image from "next/image";
 
 type Props = {
-  layoutId?: string
-  skill?: string
-  porcent?: string
-  link?: string
-  desc?: string
-  src?: string
-  exp?: string
-  theme?: string
-  dateT?: string
-  descT?: string
-  prctT?: string
-  onClick: () => void
-}
+  layoutId?: string;
+  skill?: string;
+  porcent?: string;
+  link?: string;
+  desc?: string;
+  src?: string;
+  exp?: string;
+  theme?: string;
+  dateT?: string;
+  descT?: string;
+  prctT?: string;
+  onClick: () => void;
+};
 
 function SkillCard({
   layoutId,
@@ -33,7 +33,7 @@ function SkillCard({
   exp,
   dateT,
   descT,
-  prctT
+  prctT,
 }: Props) {
   return (
     <motion.div
@@ -47,10 +47,12 @@ function SkillCard({
       className="z-20 px-10 py-5 h-72 w-96 rounded-2xl absolute overflow-hidden "
     >
       <div className="flex gap-5 flex-row">
-        <Link href={link ?? ''} target="_blank">
+        <Link href={link ?? ""} target="_blank">
           <Image
-            alt=''
-            src={src??''}
+            alt=""
+            src={src ?? ""}
+            width={100}
+            height={100}
             className="rounded-full object-fill hover:border-[#f7AB01] border-transparent border-4 w-24 h-24 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 overflow-hidden "
           />
         </Link>
@@ -80,7 +82,7 @@ function SkillCard({
         <XMarkIcon className="w-5 x-5 mx-auto" />
       </motion.button>
     </motion.div>
-  )
+  );
 }
 
-export default SkillCard
+export default SkillCard;
