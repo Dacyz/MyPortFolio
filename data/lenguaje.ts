@@ -35,7 +35,7 @@ export const listLenguages = {
         {
           title: 'Desarrollador mobile',
           desc:
-            'Desarrollo, integración y despliegue de proyectos (Android & ios): Ubikate v2, Spiralia v2, Meraki, etc. Re-diseño, reestructuración y optimización de recursos (Localización, patrón BloC, custom widgets, etc.).',
+            'Desarrollo, integración y despliegue de proyectos (Android & ios): Ubikate v2, Spiralia v2, Meraki, etc. Re-diseño, reestructuración y optimización de recursos (Localización, patrón BloC, custom widgets, etc.), Implementación de metricas Firebase, Google Tag Manager, etc.',
           date: '08-01-2023 / Actualidad',
           img:
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffractal-logo.png?alt=media&token=2892c617-e2a8-44eb-b6b9-9c55bb8cc8fb',
@@ -371,7 +371,7 @@ export const listLenguages = {
         {
           title: 'Mobile developer',
           desc:
-            'Development, integration and deployment of projects (Android & ios): Ubikate v2, Spiralia v2, Meraki, etc. Re-design, restructuring and optimization of resources (Localization, BloC pattern, custom widgets, etc.).',
+            'Development, integration and deployment of projects (Android & ios): Ubikate v2, Spiralia v2, Meraki, etc. Re-design, restructuring and optimization of resources (Localization, BloC pattern, custom widgets, etc.). Implementation of Firebase metrics, Google Tag Manager, etc.',
           date: '01-08-2023 / Present',
           img:
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffractal-logo.png?alt=media&token=2892c617-e2a8-44eb-b6b9-9c55bb8cc8fb',
@@ -705,7 +705,7 @@ export const listLenguages = {
         {
           title: 'Desenvolvedor móvel',
           desc:
-            'Desenvolvimento, integração e implantação de projetos (Android e ios): Ubikate v2, Spiralia v2, Meraki, etc. Redesenho, reestruturação e otimização de recursos (Localização, padrão BloC, widgets customizados, etc.).',
+            'Desenvolvimento, integração e implantação de projetos (Android e ios): Ubikate v2, Spiralia v2, Meraki, etc. Redesenho, reestruturação e otimização de recursos (Localização, padrão BloC, widgets customizados, etc.)e implementação de métricas Firebase, Google Tag Manager, etc. ',
           date: '01-08-2023 / Presente',
           img:
             'https://firebasestorage.googleapis.com/v0/b/inserge-application.appspot.com/o/repositorio-Diego%2Ffractal-logo.png?alt=media&token=2892c617-e2a8-44eb-b6b9-9c55bb8cc8fb',
